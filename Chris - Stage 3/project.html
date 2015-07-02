@@ -47,6 +47,7 @@
         <li>
           <ul>
             <li> <a href = #Abstraction> Abstraction </a>
+            <li> <a href = #Object> Objects</a>
             <li> <a href = #Class_and_Object_Definitions> Definitions </a></li>
           </ul>
         </li>
@@ -341,12 +342,36 @@
 
                 One of the most powerful tools we have in programming is abstraction. Abstraction is the ability to give a <em>name</em> to a thing, so that it represent the whole process or program. <br>Why is this useful? Let&#39;s imagine you&#39;ve just moved to a new country and you mother&#39;s coming to visit but she can&#39;t read any of the signs. When you tell her the way to your house you have to describe every street. OK,  you have go about 80 meters down the road until you reach a cross road then take a left untill you see the temple then take the next right then stay on the left lane when the road splits then&#8230; You quickly grow frustrated and ask your friend Steve to pick her up. Unlike your mother he&#39;s lived there for a few years so all you have to tell him is to head down Sukhumvit 101, turn into Soi 35 then when you reach the 7-11, turn right.<br>Instead of telling your mother all the directions to reach the 7-11 in Soi 35 we just tell Steve Sukhumvit 101. In Steve&#39;s head there is map of Bangkok and in that map is Sukhumvit 101, unlike your mother who has be told every single direction.<br>Steve has an <em>abstraction</em> of the Bangkok streets and with that we can give him directions to our home significantly faster than our mother. Imagine if no-one had these abstractions of maps in their heads, imagine trying to go just one week where whenever you were trying to meet up with someone you had explain every little detail to get there. Now imagine you also had to explain what a street or a building was or what left and right were. <br>Abstraction allow us to easily repeat and reuse an idea, which makes writing and reading our programs much easier. We have already used abstraction many times already, functions are the most obvious kind of abstraction. We create our function (the directions to my house for example) and then we can at any time easily call the function. Instead of writing out lines and lines of code we just need one (go_to(Sukhumvit 101 Soi 35)).
         </div>
+           <div class="info">
+            <div class="subtitle" id ="Object">
+                <h2>Objects</h2>
+            </div>
+
+                Programming languages like python use what is called <em>object orientated programming</em>. This type of programming creates programs that are designed from objects that interact with each other.  
+                <br>Most programming languages are class-based. We create the class first and then create an <em>instance</em> of that class. This instance is our object. 
+                <br> If we look at our example in abstractions we might have a class called &quot;road&quot;, which might contain data like name, directions to the road, and maybe other nearby places. So then we would create an instance of this class and call it &quot;Sukhumvit&quot; we'd then add the directions to this road and nearby places (Which would be objects themselves, such as the object &quot;7-11&quot; or an instance of the class &quot;Friend_house&quot;)
+        </div>
         <div class="info">
             <div class="subtitle" id ="Class_and_Object_Definitions">
                 <h2>Definitions</h2>
             </div>
-
-                <b>Class</b><br>A class is like a template or a blueprint. We use classes to produce objects. When making a class the name of the class must have a capital letter. inside the class call a function called __init__ , which initializes or creates space in memory for a new instance. The first information placed into init is ALWAYS Self.<br><br><b>Object</b><br>An object or an instance is a one time appearance of a class.  For example in real life we have our <em>class</em> of dog. All dogs have things in common but we can produce an <em> object</em> of a dalmatian or a poodle. <br><br><b> Method</b> <br>A method is a function that is defined inside a class. <br><br><b>Module</b><br>A module is a collection of python definitions and statements collected into one file. These are usually definitions with a similar theme that would be commonly used together such as algebra or drawing a shape. We use these with <em> import X</em> for example import turtle. This will import the module allowing you to use any definitions inside.<br><br><b> Library </b> <br>A library is a collection of modules. Python comes with The Python Standard Library, a large collection of commonly used modules. We can see this library at <a href = "https://docs.python.org/2/library/" target ="_blank">this website. </a> <br> <br><b>Class Variable</b><br>A class variable is a variable defined at the class level. These variables will remain the same across all instances of a class. <br><br><b>Inheritance</b><br>Inheritance is the concept that a <em> Child </em> can gain certain traits from its <em>Parent.</em> This is very useful in programming as it allows us to reuse code. <br><br><b> Method Overriding </b> <br>We inherit methosds from a <em> parent </em> class as well. Inside the <em>Child</em> class we can override the method so that the child uses the new method instead of its Ancestor&#39;s method. This is extremely useful in programming as it allows us to reuse code but still allows us to modify or tweak the code to suit the specific purpose of the Child.
+                <dl>
+                  <dt>Class</dt>
+                    <dd>A class is like a template or a blueprint. We use classes to produce objects. When making a class the name of the class must have a capital letter. inside the class call a function called __init__ , which initializes or creates space in memory for a new instance. The first information placed into init is ALWAYS Self.</dd>
+                  <dt>Object</dt>
+                    <dd>An object or an instance is a one time appearance of a class.  For example in real life we have our <em>class</em> of dog. All dogs have things in common but we can produce an <em> object</em> of a dalmatian or a poodle. </dd>
+                  <dt> Method</dt> 
+                    <dd>A method is a function that is defined inside a class. </dd>
+                  <dt>Module</dt>
+                    <dd>A module is a collection of python definitions and statements collected into one file. These are usually definitions with a similar theme that would be commonly used together such as algebra or drawing a shape. We use these with <em> import X</em> for example import turtle. This will import the module allowing you to use any definitions inside.</dd>
+                  <dt>Library </dt> 
+                    <dd>A library is a collection of modules. Python comes with The Python Standard Library, a large collection of commonly used modules. We can see this library at <a href = "https://docs.python.org/2/library/" target ="_blank">this website. </a> </dd>
+                  <dt>Class Variable</dt>
+                    <dd>A class variable is a variable defined at the class level. These variables will remain the same across all instances of a class. </dd>
+                  <dt>Inheritance</dt>
+                    <dd>Inheritance is the concept that a <em> Child </em> can gain certain traits from its <em>Parent.</em> This is very useful in programming as it allows us to reuse code. </dd>
+                  <dt> Method Overriding </dt> 
+                    <dd>We inherit methosds from a <em> parent </em> class as well. Inside the <em>Child</em> class we can override the method so that the child uses the new method instead of its Ancestor&#39;s method. This is extremely useful in programming as it allows us to reuse code but still allows us to modify or tweak the code to suit the specific purpose of the Child.</dd>
         </div>
         <br>
 </div>
